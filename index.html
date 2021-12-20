@@ -1,0 +1,77 @@
+<html>
+
+<head>
+  <title>Emotion To Emoji</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <center>
+<h3 class="btn btn-success heading">
+Emotions to madness inside
+<br>
+<span>&#128520;</span>
+<span>&#128545;</span>
+<span>&#128561;</span>
+<span>&#129313;</span>
+<span>&#129314;</span>
+<span>&#129324;</span>
+</h3>
+      <br><br>
+
+      <p style="font-size: 22px;">Take your selfie to generate Madness
+        <br>
+        <b style="color: yellow">Are you Happy-sad?</b>
+        <br>
+        <b style="color: black">Are you Sad-angry?</b>
+        <br>
+        <b style="color: red">Are you Angry-happy?</b>
+        <br>
+      </p>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Web cam view - </label>
+<div id="camera">
+</div>
+        <br><br>
+<button class="btn btn-success" onclick="bdino()">
+Capture your nose
+</button>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label> Prediction 1- </label>
+        <p class="emotion_name" id="cdino"></p>
+        <p class="emoji" id="ddino"></p>
+        <label> Prediction 2- </label>
+        <p class="emotion_name" id="edino"></p>
+        <p class="emoji" id="fdino"></p>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Snapshot - </label>
+<div id="result">
+</div>
+        <br><br>
+<button class="btn btn-success" onclick="adino()">
+  Predict Madness Level
+</button>
+      </div>
+
+    </center>
+
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
